@@ -1,0 +1,26 @@
+.udemyCarousel {
+    background-image: url(../../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    &__content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 40%;
+        h2 {
+            @include styleText($color-white-0,$fs-4,$fw-bold-1)
+        }
+        p {
+            @include styleText($color-white-0,$fs-2 - 2,$fw-normal)
+        }
+        .input-group {
+            input {
+                height: 50px;
+                font-size: $fs-2;
+            }
+        }
+    }
+}

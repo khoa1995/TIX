@@ -1,0 +1,33 @@
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($bg-color,$border,$radius,$pd-y,$pd-x) {
+    background-color: $bg-color;
+    border: 1px solid $border;
+    border-radius: $radius;
+    padding: $pd-y $pd-x;
+    transition: all .5s;
+}
+
+@mixin styleHoverButon($bg-color,$color,$border) {
+    background-color: $bg-color;
+    color: $color;
+    border-color: $border;
+}
+
+@mixin responsive($screen) {
+    // kiểm tra screen có tồn tại trong biến $breakpoints
+    // kiểm tra từng dòng trong $breakpoints trùng với $key
+    @if(map-has-key($map: $breakpoints, $key: $screen)){
+        //nếu tìm thấy
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }@else{
+        @warn 'Giá trị không tồn tại';
+    }
+}

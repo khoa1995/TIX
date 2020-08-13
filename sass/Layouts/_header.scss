@@ -1,0 +1,60 @@
+.header__left{
+    display: flex;
+    @include styleText($color-black-light,$fs-1,$fw-normal);
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+    .categories {
+        margin-right: 15px;
+        // canh align 1 element
+        align-self: center;
+    }
+    .inputSearch {
+        // flex-grow khai báo 1 sẽ chiếm hết khoảng trống khi khai báo flex
+        flex-grow: .8;
+        .input-group {
+            background-color: $color-gray-6;
+            input {
+                background-color: $color-gray-6;
+            }
+        }
+    }
+}
+.header__right {
+    .navbar-nav {
+        .nav-link {
+            @include styleText($color-black-light,$fs-1,$fw-normal);
+        }
+    }
+}
+
+@include responsive('extra-large'){
+    .header__right {
+        .ude-menu {
+            display: none;
+        }
+    }
+    .header__left {
+        .formSearch {
+            flex-grow: 1;
+        }
+    }
+}
+@include responsive('medium'){
+    .header__right {
+        .ude-btn {
+            display: none;
+        }
+    }
+    .header__left {
+        justify-content: center;
+        .formSearch {
+            display: none;
+        }
+        .categories {
+            display: none;
+        }
+    }
+}
