@@ -7,6 +7,7 @@ header {
     .navbar-nav {
       flex-grow: 1;
       justify-content: center;
+      font-weight: $fw-bold-1;
     }
     .navbar-right {
       display: flex;
@@ -15,7 +16,7 @@ header {
         margin: auto $mg-2 + 5px;
         align-items: center;
         img {
-          border-radius: $br-around;
+          border-radius: $border-radius-50;
           width: 30px;
           margin-right: $pd-1;
         }
@@ -29,6 +30,7 @@ header {
         .custom-select {
             border: none;
             background: transparent;
+            padding-right: 0;
             &:focus {
                 box-shadow: none;
             }

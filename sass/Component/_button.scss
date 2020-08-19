@@ -1,0 +1,8 @@
+.btn-play {
+    cursor: pointer;
+    @include styleButton(transparent,$color-white-0,$border-radius-50,$pd-2 + 10,$pd-2 + 10);
+    border-width: 2px;
+    &:hover {
+        @include styleHoverButon(transparent,$color-gray-3,$color-gray-3)
+    }
+}
