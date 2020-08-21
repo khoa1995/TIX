@@ -19,13 +19,14 @@
         }      
     }
     .carousel-indicators {
+        bottom: 12%;
         li {
             border-radius: $border-radius-50;
             height: 15px;
             width: 15px;
             background-color: $color-gray-3;
             &.active {
-                background-color: $color-red-0;
+                background-color: $color-orange;
             }
         }
     }

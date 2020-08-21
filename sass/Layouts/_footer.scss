@@ -1,0 +1,63 @@
+.footer {
+    &__content {
+        background-color: $color-black-0;
+        h6 {
+            @include styleText($color-white-0,$fs-0,$fw-bold-1);
+        }
+        .footer__link {
+            a {
+                width: 115px;
+                @include styleText($color-gray-2,$fs-1,$fw-bold-1);
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .partner {
+            img {
+                border-radius: $border-radius-50;
+                height: 30px;
+                background-color: $color-white-0;
+            }
+            &__row {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+            }
+        }
+        .mobile-app, .social {
+            img {
+                height: 30px;
+                margin: 5px;
+            }
+        }
+        .mobile-app {
+            text-align: right;
+        }
+        hr {
+            background-color: #4a4a4a;
+        }
+        .address {
+            display: flex;
+            justify-content: space-between;
+            &__details {
+                p {
+                    @include styleText($color-gray-2,$fs-1,$fw-normal)
+                }
+            }
+            &__right {
+                img {
+                    width: 130px;
+                }
+            }
+            &__left {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    height: 50px;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
