@@ -1,0 +1,32 @@
+.application {
+    background-image: url(../../img/application.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 80px 0;
+    &__content {
+        max-width: 940px;
+        margin: auto;
+        .title {
+            @include styleText($color-white-0,$fs-4 - 1,$fw-bold-1)
+        }
+        .text, .link {
+            @include styleText($color-white-0,$fs-0,$fw-bold-0)
+        }
+        .link {
+            a {
+                text-decoration: underline;
+                @include styleText($color-white-0,$fs-0,$fw-bold-0)
+            }
+        }
+        button {
+            font-weight: 700;
+            padding: $pd-1 $pd-2;
+            background-color: $color-orange;
+        }
+        .phone {
+            .img-phone {
+                padding: 0 28%;
+            }
+        }
+    }
+}
