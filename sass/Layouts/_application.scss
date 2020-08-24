@@ -27,6 +27,24 @@
             .img-phone {
                 padding: 0 28%;
             }
+            #sliderScreen {
+                position: absolute;
+                padding: 1.5% 29.3% 0 29.3%;
+                top: 0;
+                left: 0;
+                width: 100%;
+                .owl-item {
+                    img {
+                        height: 100%;
+                        border-radius: 20px;
+                        margin: auto;
+                        width: 94%
+                    }
+                }
+            }
+        }
+        @include responsive('medium') {
+            text-align: center;
         }
     }
 }
