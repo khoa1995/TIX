@@ -59,5 +59,25 @@
                 }
             }
         }
+        @include responsive('medium') {
+            text-align: center;
+            .footer__link {
+                a {
+                    width: auto;
+                }
+            }
+            .mobile-app {
+                text-align: center;
+            }
+            .address {
+                display: block;
+                &__left {
+                    display: block;
+                    img {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
     }
 }
