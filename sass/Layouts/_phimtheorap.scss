@@ -1,0 +1,194 @@
+.phim_theo_rap {
+  width: 60%;
+  height: 705px;
+  padding: 50px 0;
+
+  .row {
+    .danh_sach_rap {
+      width: 100%;
+      padding: 0;
+      .nav-pills {
+        flex-wrap: nowrap;
+        height: 605px;
+        // overflow-y: scroll;
+        border: 1px solid #ddd;
+
+        a {
+          position: relative;
+          opacity: 0.5;
+          padding: 20px;
+          img {
+            width: 50px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            border-color: rgba(238, 238, 238, 0.88);
+            bottom: 0;
+            left: 50%;
+            width: calc(100% - 30%);
+            transform: translateX(-50%);
+            border-bottom: 1px solid #ddd;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .nav-link.active {
+          background-color: transparent;
+          opacity: 1;
+        }
+      }
+    }
+    .danh_sach_rap_theo_quan {
+      padding: 0;
+      border: 1px solid #ddd;
+      .tab-content {
+        .danh_sach_chi_nhanh {
+          flex-wrap: nowrap;
+          overflow-y: hidden;
+          height: 605px;
+          &:hover {
+            overflow-y: scroll;
+          }
+          .chi_nhanh_rap_item {
+            position: relative;
+            padding: 5%;
+            opacity: 0.5;
+            margin: 0;
+            &::after {
+              content: "";
+              position: absolute;
+              border-color: rgba(238, 238, 238, 0.88);
+              bottom: 0;
+              left: 50%;
+              width: calc(100% - 10%);
+              transform: translateX(-50%);
+              border-bottom: 1px solid #ddd;
+            }
+            .hinh_anh_rap {
+              padding: 0;
+              .hinh_anh_rap_item {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            .info_rap {
+              height: 50px;
+              padding: 0;
+              padding-left: 20px;
+              p:first-child {
+                padding: 0;
+                margin: 0;
+                font-size: $fs-1 + 1;
+                span {
+                  color: $color-orange-3 !important ;
+                }
+              }
+              p {
+                padding: 0;
+                margin: 0;
+                font-size: $fs-5;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+              a {
+                padding: 0;
+                margin: 0;
+                font-size: $fs-5;
+                text-decoration: none;
+                color: $color-orange-3;
+              }
+            }
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          .active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .danh_sach_phim {
+      padding: 0;
+      border: 1px solid #ddd;
+      .tab-content {
+        .ten_phim {
+          flex-wrap: nowrap;
+          overflow-y: hidden;
+          height: 605px;
+          &:hover {
+            overflow-y: scroll;
+          }
+          .ten_phim_item {
+            position: relative;
+            padding: 1%;
+            margin: 0;
+            &::after {
+              content: "";
+              position: absolute;
+              border-color: rgba(238, 238, 238, 0.88);
+              bottom: 0;
+              left: 50%;
+              width: calc(100% - 10%);
+              transform: translateX(-50%);
+              border-bottom: 1px solid #ddd;
+            }
+            .hinh_anh_phim {
+              padding: 0;
+              .hinh_anh_phim_item {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+              }
+            }
+            .info_phim {
+              height: 50px;
+              padding: 0;
+              padding-left: 20px;
+              p:first-child {
+                padding: 0;
+                margin: 0;
+                font-size: $fs-5;
+                font-weight: $fw-bold;
+                color: $color-black-1 !important ;
+                span {
+                  color: $color-white-0 !important ;
+                  background-color: $color-orange-1;
+                  padding: 0 5px;
+                  border-radius: 4px;
+                }
+              }
+              p {
+                padding: 0;
+                margin: 0;
+                font-size: $fs-5;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                color: $color-gray-4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+div.danh_sach_chi_nhanh::-webkit-scrollbar {
+  width: 4px;
+  background-color: #e8e3e3;
+}
+div.danh_sach_chi_nhanh::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+div.danh_sach_chi_nhanh::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: $color-black-light;
+}

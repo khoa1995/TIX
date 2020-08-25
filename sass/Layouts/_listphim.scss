@@ -1,0 +1,186 @@
+.tix__Film {
+  width: 60%;
+  padding: 0;
+  .nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+    .nav-item {
+      align-items: center;
+      font-size: 18px;
+
+      .nav-link {
+        border: none;
+        height: $fs-3;
+        line-height: $fs-3;
+        color: $color-black-0;
+        &:hover {
+          font-size: $fs-3;
+          transition: all 0.3s;
+        }
+      }
+      .nav-link.active {
+        color: $color-orange-1;
+        font-size: $fs-0 + 3;
+        font-size: $fs-3;
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 0;
+    .carousel__DangChieu {
+      padding: 0;
+      .carousel-inner {
+        .carousel-item-dangchieu {
+          .phimDangChieu {
+            margin: 10px;
+            .danh_gia_diem {
+              position: absolute;
+              top: 0;
+              right: 0;
+              color: $color-white-0;
+              background-color: #0076917a;
+              border-radius: 10px;
+              padding: 2px;
+              border: 1px solid #0076917a;
+              margin-top: 10px;
+              margin-right: 10px;
+              p {
+                text-align: center;
+                font-size: $fs-0;
+                align-items: center;
+                margin: 2px 0;
+              }
+
+              .danh_gia_sao {
+                margin-bottom: 5px;
+                height: 8px;
+                width: 50px;
+                display: flex;
+              }
+            }
+            position: relative;
+            img {
+              border-radius: 5px;
+              display: block;
+              width: 100%;
+              height: 100%;
+
+              overflow: hidden;
+            }
+            .overlay {
+              opacity: 0;
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                to top,
+                rgb(0, 0, 0),
+                rgba(0, 0, 0, 0)
+              );
+
+              button {
+                border: 1px solid $color-white-0;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                z-index: 5;
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                padding-left: 3px;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, 0.527);
+                color: $color-white-0;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+
+          .carousel-item-tieude {
+            display: block;
+            margin: 0 10px;
+
+            .review {
+              display: block;
+              .span__01 {
+                background-color: $color-orange-1;
+                color: $color-white-0;
+                padding: 1px 5px;
+                border-radius: 3px;
+                font-size: $fs-1 + 1;
+              }
+              .span__02 {
+                font-size: $fs-0 + 1;
+                font-family: $fw-bold-1;
+              }
+              p {
+                font-size: $fs-1;
+                margin-left: 5px;
+              }
+            }
+            .mua__ve {
+              font-size: $fs-0 + 3;
+              border-radius: 10px;
+              padding: 2px 5px;
+              background-color: $color-orange-2;
+              width: 100%;
+              display: none;
+              bottom: -50%;
+              left: 50%;
+              padding: 12px 0;
+              text-align: center;
+              a {
+                color: $color-white-0;
+              }
+            }
+          }
+          &:hover {
+            .phimDangChieu {
+              .overlay {
+                opacity: 1;
+                transition: all 0.5s;
+              }
+            }
+            .carousel-item-tieude {
+              .review {
+                display: none;
+                transition: all 0.5s;
+              }
+              .mua__ve {
+                display: block;
+                transition: all 0.5s;
+              }
+            }
+          }
+        }
+      }
+
+      .carousel-control-prev {
+        left: -15%;
+        img {
+          height: $fs-4 + 20;
+        }
+        @include responsive("medium") {
+          display: none;
+        }
+      }
+      .carousel-control-next {
+        right: -15%;
+        img {
+          height: $fs-4 + 20;
+        }
+        @include responsive("medium") {
+          display: none;
+        }
+      }
+    }
+  }
+}
