@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 html,body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     @include styleText($color-black-0,$fs-0,$fw-normal)
 }

@@ -1,19 +1,20 @@
 // Helper
 //variables: phải add vào đầu tiên
-@import './Helper/variables';
-@import './Helper/mixin';
+@import "./Helper/_variables";
+@import "./Helper/_mixin";
 
 //Vendor: thư viện thứ 3 phải nằm trên cùng
 
 //Base
-@import './Base/normalized';
-@import './Base/reset';
+
+@import "./Base/_reset";
 
 //Component
 
 
 // Layouts
-
+@import "./Layout/_listphim.scss";
+@import "./Layout/_phimtheorap.scss";
 
 //page
 
