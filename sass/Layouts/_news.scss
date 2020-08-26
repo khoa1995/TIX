@@ -1,0 +1,134 @@
+.news {
+    .news__content {
+        padding-top: 120px;
+        .nav {
+            justify-content: center;
+            margin-bottom: 20px;
+    
+            a {
+                @include styleText($color-black-0, $fs-2, $fw-bold);
+                padding-bottom: $pd-0 -5px;
+                line-height: 24px;
+                height: 24px;
+                transition: all 0.5s;
+                &:hover {
+                    @include styleText($color-black-0, $fs-2 + 4, $fw-bold-1);
+                }
+            }
+            .active {
+                @include styleText(#fa5238, $fs-2 + 4, $fw-bold);
+                transition: all 0.8;
+            }
+        }
+        .tab-content {
+            .item {
+                padding-right: 7.5px;
+                padding-left: 7.5px;
+                padding-right: 0px;
+                .card {
+                    border: none;
+                    margin-right: 0px;
+                    padding: 0px;
+                    
+                    img {
+        
+                        border-radius: 4px;
+                        margin: 0px !important;
+                    }
+                    .card-body {
+                        box-sizing: border-box;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        padding-bottom: 0px;
+                        p {
+                            margin: 5px 0px 7.5px;
+                            padding: 0px 5px 0px 0px;
+                            @include styleText(#4a4a4a, $fs-1, $fw-bold-0);
+                            text-align: justify;
+                            display: -webkit-box;
+                        }
+                        a {
+                            margin-bottom: 5px;
+                            @include styleText($color-black-0, $fs-2 -4, $fw-bold-1);
+                            &:hover {
+                                @include styleText(#fa5238, $fs-2 -4, $fw-bold-1);
+                                transition: all 0.5;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .news__icon {
+                        margin-bottom: 35px;
+                        i {
+                            @include styleText(#333333, 14px, $fw-normal);
+                            margin-right: 25px;
+                        }
+                    }
+                }
+                .smallCard {
+                    margin: 0px;
+                    height: 61px;
+                    max-width: 100%;
+                    display: flex;
+                    transition: all 0.5;
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        margin-right: 10px;
+                        float: left;
+                        border-radius: 4px;
+                    }
+                    a {
+                        
+                        height: 42px;
+                        width: 228px;
+                        p {
+                            
+                            display: block;
+                            text-align: justify;
+                            margin-right: 0px;
+                            
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    & :hover {
+                        @include styleText(#fa5238, $fs-2 -4, $fw-bold);
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            .seeMore {
+                height: 200px;
+                position: relative;
+                margin-bottom: 35px;
+                .seeContent {
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    button {
+                        height: 40px;
+                        width: 150px;
+                        border-radius: 4px;
+                        border: 1px solid #949494;
+                        background-color: #ffffff;
+                        @include styleText(#949494, $fs-2 - 5, $fw-normal);
+                        transition: all 0.5s;
+                        &:hover {
+                            border:none;
+                            background-color: #fa5238;
+                            @include styleText(#ffffff, $fs-2 - 5, $fw-normal);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

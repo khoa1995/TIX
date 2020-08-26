@@ -1,6 +1,5 @@
 .phim_theo_rap {
-  width: 60%;
-  height: 705px;
+  background-color: $color-white-0;
   padding: 50px 0;
 
   .row {
@@ -10,9 +9,8 @@
       .nav-pills {
         flex-wrap: nowrap;
         height: 605px;
-        // overflow-y: scroll;
         border: 1px solid #ddd;
-
+        flex-direction: column;
         a {
           position: relative;
           opacity: 0.5;
@@ -38,6 +36,10 @@
         .nav-link.active {
           background-color: transparent;
           opacity: 1;
+        }
+        @include responsive('medium') {
+          flex-direction: row;
+          height: auto;
         }
       }
     }
