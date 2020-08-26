@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+header .navbar-brand {
+  width: 50px;
+  height: 50px;
+}
+
+header img {
+  width: 100%;
+}
+
+.news__content {
+  padding-top: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.news__content .nav {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.news__content .nav a {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px -5px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.news__content .nav :hover {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.news__content .nav .active {
+  color: #fa5238;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.8;
+}
+
+.tab-content .item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  padding-right: 0px;
+}
+
+.tab-content .item .card {
+  border: none;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+.tab-content .item .card img {
+  border-radius: 4px;
+  margin: 0px !important;
+}
+
+.tab-content .item .card .card-body {
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.tab-content .item .card .card-body p {
+  margin: 5px 0px 7.5px;
+  padding: 0px 5px 0px 0px;
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: justify;
+  display: -webkit-box;
+}
+
+.tab-content .item .card .card-body a {
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 20px -4;
+  font-weight: 700;
+}
+
+.tab-content .item .card .card-body a:hover {
+  color: #fa5238;
+  font-size: 20px -4;
+  font-weight: 700;
+  transition: all 0.5;
+  text-decoration: none;
+}
+
+.tab-content .item .card .news__icon {
+  margin-bottom: 35px;
+}
+
+.tab-content .item .card .news__icon i {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 25px;
+}
+
+.tab-content .item .smallCard {
+  margin: 0px;
+  height: 61px;
+  max-width: 100%;
+  display: flex;
+}
+
+.tab-content .item .smallCard img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 4px;
+}
+
+.tab-content .item .smallCard a {
+  height: 42px;
+  width: 228px;
+}
+
+.tab-content .item .smallCard a p {
+  display: block;
+  text-align: justify;
+  margin-right: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-content .item .smallCard :hover {
+  color: #fa5238;
+  font-size: 20px -4;
+  font-weight: bold;
+  transition: all 0.5;
+  text-decoration: none;
+}
+
+.tab-content .seeMore {
+  height: 200px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.tab-content .seeMore .seeContent {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tab-content .seeMore .seeContent button {
+  height: 40px;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #949494;
+  background-color: #ffffff;
+  color: #949494;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.tab-content .seeMore .seeContent button:hover {
+  background-color: #fa5238;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+}
+/*# sourceMappingURL=main.css.map */

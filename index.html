@@ -28,10 +28,515 @@
   </head>
   <body>
     <header></header>
+    <section class="news">
+      <div class="news__content">
+        <!-- //hiển thị 3 tùy chọn thanh NAV -->
+        <ul class="nav" id="myTab" role="tablist">
+          <li class="nav-item active">
+            <a
+              class="nav-link active"
+              id="home-tab"
+              data-toggle="tab"
+              href="#dienAnh24h"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Điện Ảnh 24h</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#review"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Review</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#khuyenmai"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Khuyến Mãi</a
+            >
+          </li>
+        </ul>
+        <!-- hiển thị Tab dienAnh24h -->
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="dienAnh24h"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <!-- Hiển thị Cụm 1  Tab dienAnh24h -->
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new1.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt
+                          Christopher <br />
+                          Nolan
+                        </a>
+                        <p class="card-text">
+                          Làng phim đương đại những năm qua chứng kiến sự lên
+                          ngôi của cái tên Christopher Nolan, được biết tới như
+                          một trong những đạo diễn thiên tài với khả năng tạo ra
+                          siêu phẩm bạc tỉ chất lượng.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new2.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng
+                          phòng vé' <br> xứ Hàn
+                        </a>
+                        <p class="card-text">
+                          Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn
+                          4.68 triệu vé, hai tên tuổi lão làng trong làng điện
+                          ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết
+                          Tận – một bộ phim hành động siêu “nặng đô”.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hiển thị Cụm 2  Tab dienAnh24h -->
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new3.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          6 đạo diễn tỉ đô làm nên thành công của những bom tấn
+                          đình đám nhất Hollywood
+                        </a>
+                        <p class="card-text">
+                          Hollywood luôn yêu thích những dự án điện ảnh với tiềm
+                          năng trở thành bom tấn. Trên con đường đó, đạo diễn là
+                          một trong những vị trí quan trọng nhất
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new4.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Gái Già Lắm Chiêu V – Những cuộc đời <br />vương giả
+                        </a>
+                        <p class="card-text">
+                          Bộ phim qui tụ dàn diễn viên nổi tiếng nhiều thế hệ từ
+                          Bắc tới Nam, trong đó NSND Lê Khanh, NSND Hồng Vân sẽ
+                          tái hợp và đóng cùng nữ diễn viên trẻ
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="smallCard">
+                      <img src="./img/new5.png" alt="" />
+                      <a>
+                        
+                        Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái
+                        Già Lắm...
+                      
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new6.png" alt="" />
+                      <a>
+                        
+                          5 lý do khiến bạn không thể bỏ qua bộ phim Cậu
+                          Bé Người Gỗ...
+                        
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new7.png" alt="" />
+                      <a>
+                        TENET công bố ngày khởi chiếu 
+                        chính thức tại Việt Nam
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new8.jpg" alt="" />
+                      <a>
+                        Khi phụ nữ không còn ở thế trốn 
+                        chạy của nạn nhân
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hiển thị nút seeMore -->
+            <div class="seeMore">
+              <div class="seeContent">
+                <button>XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+          <!-- hiển thị tab review -->
+          <div
+            class="tab-pane fade"
+            id="review"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <!-- Hiển thị cum 1 tab review -->
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new9.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối
+                          liên kết
+                        </a>
+                        <p class="card-text" style="height: 38px">
+                          Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích
+                          Quỷ Ám <br />
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new10.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Review: Dinh Thự Oan Khuất (Ghost Of War)
+                        </a>
+                        <p class="card-text">
+                          Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh
+                          Thự Oan Khuất vẫn chưa đủ để đem khán giả trở lại
+                          phòng vé!
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hiển thị cum 2 tab review-->
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new11.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          ‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh
+                        </a>
+                        <p class="card-text">
+                          Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar
+                          2019 của đạo diễn Spike Lee là một lát cắt nữa về nạn
+                          phân biệt chủng tộc - nỗi đau gây nhức nhối nước Mỹ
+                          cho tới tận hôm nay.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new12.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          American Sniper - Chính nghĩa hay phi <br />
+                          nghĩa?
+                        </a>
+                        <p class="card-text">
+                          American Sniper khắc họa một tay súng bắn tỉa “huyền
+                          thoại” của Hải quân Mỹ với 4 lần tham chiến ở Trung
+                          Đông. Câu chuyện phim chậm rãi đưa người
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="smallCard">
+                      <img src="./img/new13.png" alt="" />
+                      <a> Review: Spider-Man: Into The Spider-Vesre </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new14.jpg" alt="" />
+                      <a>
+                        COVID-19 là bản chính thức của MEV-1 phim contagion
+                        (2011)
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new15.jpg" alt="" />
+                      <a>
+                        [Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa
+                        bao giờ...
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new16.jpg" alt="" />
+                      <a>
+                        [Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh
+                        hùng...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hiển thị nút seeMore -->
+            <div class="seeMore">
+              <div class="seeContent">
+                <button>XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+          <!-- Hiển thi Tab khuyenmai -->
+          <div
+            class="tab-pane fade"
+            id="khuyenmai"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <!-- Hiển thị cụm 1 Tab khuyenmai-->
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new17.jpg" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!
+                        </a>
+                        <p class="card-text">
+                          Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ
+                          với giá 59k/vé khi mua vé trên TIX và thanh toán bằng
+                          ZaloPay hoặc Mục Vé Phim trên ZaloPay.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new18.png" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          Beta Cineplex trở lại với hàng loạt ưu đãi lớn
+                        </a>
+                        <p class="card-text">
+                          Từ thứ 7 tuần này (9/5), toàn bộ các rạp Beta Cinemas
+                          trên toàn quốc sẽ mở cửa trở lại. Mừng ngày trở lại,
+                          hàng loạt khuyến mại KHỦNG đổ bộ cùng lúc dàng cho các
+                          tín đồ của TIX đây.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new19.jpg" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                          [123Phim] Thứ 6 Không Đen Tối - Ưu đãi huỷ diệt 11k/vé
+                          Anh Trai Yêu Quái
+                        </a>
+                        <p class="card-text">
+                          Từ giờ đến 05.12.2019, chỉ cần lần đầu mua vé trên
+                          123Phim, chọn thanh toán bằng ZaloPay hoặc mục Vé Phim
+                          trên ZaloPay, bạn có thể đặt ngay vé phim
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="card">
+                      <img class="card-img-top" src="./img/new20.jpg" />
+                      <div class="card-body">
+                        <a
+                          href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan"
+                        >
+                        [123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp Sư Mù: Ai Chết 
+                        </a>
+                        <p class="card-text">
+                          123Phim đồng hành cùng phim Việt - Giảm ngay 30k mỗi giao dịch khi đặt vé Pháp Sư Mù: Ai Chết Giơ Tay trên ứng dụng 123Phim.
+                        </p>
+                      </div>
+                      <div class="news__icon">
+                        <i class="fa fa-thumbs-up"> 0 </i>
+                        <i class="fab fa-facebook-messenger"> 0 </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12 pl-1 pr-1">
+                  <div class="item">
+                    <div class="smallCard">
+                      <img src="./img/new21.jpg" alt="" />
+                      <a>
+                        [Mega GS] Một đoá hoa thay ngàn lời yêu
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new22.jpg" alt="" />
+                      <a>
+                        <p>
+                          [123Phim] NHẬP MÃ 'BKT' - Giảm ngay 20k khi đặt vé Bắc 
+                        </p>
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new23.jpg" alt="" />
+                      <a>
+                        Sinh Nhật Mega GS
+                      </a>
+                    </div>
+
+                    <div class="smallCard">
+                      <img src="./img/new24.jpg" alt="" />
+                      <a>
+                        [123Phim] TixShop trở lại, quà ‘xịn’ hơn xưa
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hiển thị nút seeMore -->
+            <div class="seeMore">
+              <div class="seeContent">
+                <button>XEM THÊM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer></footer>
     
     <!-- Thư viện hỗ trợ -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
